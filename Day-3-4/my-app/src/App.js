@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from '../src/components/Header.js';
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -10,6 +11,7 @@ const App = () => {
   }
   return (
     <>
+      <Header name="Ashmit" />
       <h1>Count: {count}</h1>
       <button onClick={Increment}>Increment</button>
       <button onClick={Decrement}>Decrement</button>
