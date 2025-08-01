@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Button from '../Button/button';
 
-const Card = ({title , desc , imageUrl}) => {
+
+const Card = ({ title, desc, imageUrl }) => {
   return (
     <>
-    <h2>{title}</h2>
-    <p>{desc}</p>
-    <img src={imageUrl} alt={title} style={{width: '100px', height: '100px'}} />
-    <button>Click</button>
+      <h2>{title}</h2>
+      <p>{desc}</p>
+      <img src={imageUrl} alt={title} style={{ width: '100px', height: '100px' }} />
+      <Button/>
     </>
+  );
+};
 
-  )
-}
-
-export default Card
+export default Card;

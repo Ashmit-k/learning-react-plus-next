@@ -7,12 +7,12 @@ const App = () => {
       <Card 
         title="React Card"
         desc="This is a description of the card."
-        imageUrl="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png"
+        imageUrl="https://tse1.mm.bing.net/th/id/OIP.4jx4t2JuBvL-EpgpblKdbQHaHa?w=1280&h=1280&rs=1&pid=ImgDetMain&o=7&rm=3"
       />
       <Card 
         title="Next Card"
         desc="This is a description of the card."
-        imageUrl="https://via.placeholder.com/100"
+        imageUrl="https://assets.awwwards.com/awards/element/2022/09/6313eaf4b41bd275260216.png"
       />
     </div>
   );
