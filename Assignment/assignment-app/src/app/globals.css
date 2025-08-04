@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+
+:root {
+  --deviceWidth: 1440;
+  overflow-x: hidden;
+  --primary: #3253DC;
+  --text-color: white;
+}
+
+
+body {
+  background: var(--background);
+  color: var(--primary);
+  font-family: Open-sans;
+
+}
+
+/* Hero Section */
+
+.heroSection {
+  width: 100vw;
+  position: absolute;
+  height: 100vh;
+  gap: calc((48 / var(--deviceWidth)) * 100vw);
+  padding-top: calc((38 / var(--deviceWidth)) * 100vw);
+  padding-inline: calc((197/ var(--deviceWidth)) * 100vw);
+  background-image: url("../../public/assets/Gradient-Background.svg");
+}
+
+
+/* Navbar  */
+
+.navbar {
+  position: relative;
+  height: calc((59 / var(--deviceWidth)) * 100vw);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.logoDiv {
+  width: calc((195 / var(--deviceWidth)) * 100vw);
+}
+
+.navLinks ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks ul li {
+  list-style: none;
+  color: rgb(255, 255, 255);
+}
+
+.navLinks ul li a {
+  font-size: calc((14 / var(--deviceWidth)) * 100vw);
+}
+
+.navButtons {
+  /* padding-block: calc((0 / var(--deviceWidth)) * 100vw); */
+  padding-inline: calc((36 / var(--deviceWidth)) * 100vw);
+  border-radius: calc((8 / var(--deviceWidth)) * 100vw);
+  background-color: var(--primary);
+}
+
+
+.heroHeading h1 {
+  margin-right: calc((12/var(--deviceWidth))* 100vw);
+  font-size: calc((72 / var(--deviceWidth)) * 100vw);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  color: transparent;
+  background-image: radial-gradient(circle, #ffffff 0%, #ffffff 35%, #9ca3af 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.heroSubHeading p {
+  font-size: calc((18 / var(--deviceWidth)) * 100vw);
+  margin-top: calc((-20 / var(--deviceWidth)) * 100vw);
+  padding-inline: calc((16 / var(--deviceWidth)) * 100vw);
+  color: var(--text-color);
+}
+
+.heroButtons {
+  margin-top: calc((-20 / var(--deviceWidth)) * 100vw);
+  background-color: var(--primary);
+  border-radius: 4px;
+  padding-inline: calc((14 / var(--deviceWidth)) * 100vw);
+
+}
+
+.heroImage img {
+  width: 60vw;
+}
