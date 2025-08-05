@@ -1,0 +1,58 @@
+/* Navbar default */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+/* Mobile hamburger icon */
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+/* Mobile menu */
+.mobileMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    z-index: 998;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: 0.3s ease;
+}
+
+/* When open */
+.mobileMenu.open {
+    display: flex;
+}
+
+/* Close Icon inside menu */
+.closeIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Hide desktop navbar on small screens */
+@media (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import Styles from '../../Styles/utils.module.css'
 
 type ButtonProps = {
     buttonText: string
@@ -6,7 +7,7 @@ type ButtonProps = {
 
 const ButtonClass: React.FC<ButtonProps> = ({ buttonText }) => {
     return (
-        <button className="text-white px-4 py-2 rounded">
+        <button className={`text-white ${Styles.commonBtn}`} >
             {buttonText}
         </button>
     )

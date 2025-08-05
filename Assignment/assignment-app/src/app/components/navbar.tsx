@@ -1,33 +1,58 @@
-import React from 'react'
-import ButtonClass from '../utilities/buttons/button'
-import { ChevronDown } from 'lucide-react';
+'use client'
 
+import React, { useState } from 'react';
+import ButtonClass from '../utilities/buttons/button';
+import { ChevronDown, X, Menu } from 'lucide-react';
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <>
-            <div className="navbar">
-                <div className="logoDiv ">
-                    <img src="/assets/logo.png" alt="logo" />
-                </div>
-                <div className="navLinks">
-                    <ul>
-                        <li><a href="#">Products </a></li>
-                        <li><a href='#'>Why Us?</a></li>
-                        <li><a href='#'>Plans</a></li>
-                        <li><a href='#'>For Develops</a></li>
-                        <li><a href='#'>Contact</a></li>
 
-                    </ul>
+            {/* Fullscreen Mobile Menu */}
+            <div className={`mobileMenu ${isOpen ? 'open' : ''}`}>
+                <div className="closeIcon" onClick={() => setIsOpen(false)}>
+                    <X size={28} color='white' />
                 </div>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Why Us?</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">For Developers</a></li>
+                    <li><a href="#">Contact</a></li>
 
+                </ul>
                 <div className="navButtons">
                     <ButtonClass buttonText='Login' />
                 </div>
             </div>
 
-        </>
-    )
-}
+            {/* Desktop Navbar */}
+            <div className="navbar">
+                <div className="logoDiv">
+                    <img src="/assets/logo.png" alt="logo" />
+                </div>
+                {/* Hamburger Menu for Mobile */}
+                <div className="hamburger" onClick={() => setIsOpen(true)}>
+                    <Menu size={28} color='white' />
+                </div>
 
-export default Navbar
+                <div className="navLinks">
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Why Us?</a></li>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">For Developers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div className="navButtons">
+                    <ButtonClass buttonText='Login' />
+                </div>
+            </div>
+        </>
+    );
+};
+
+export default Navbar;

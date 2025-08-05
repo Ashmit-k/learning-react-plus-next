@@ -1,23 +1,20 @@
 @import "tailwindcss";
 
-
 :root {
   --deviceWidth: 1440;
   overflow-x: hidden;
   --primary: #3253DC;
   --text-color: white;
+  background-color: black;
 }
-
 
 body {
   background: var(--background);
   color: var(--primary);
   font-family: Open-sans;
-
 }
 
 /* Hero Section */
-
 .heroSection {
   width: 100vw;
   position: absolute;
@@ -26,19 +23,19 @@ body {
   padding-top: calc((38 / var(--deviceWidth)) * 100vw);
   padding-inline: calc((197/ var(--deviceWidth)) * 100vw);
   background-image: url("../../public/assets/Gradient-Background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-/* Navbar  */
-
+/* Navbar */
 .navbar {
   position: relative;
   height: calc((59 / var(--deviceWidth)) * 100vw);
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
 }
 
 .logoDiv {
@@ -60,13 +57,12 @@ body {
 }
 
 .navButtons {
-  /* padding-block: calc((0 / var(--deviceWidth)) * 100vw); */
   padding-inline: calc((36 / var(--deviceWidth)) * 100vw);
   border-radius: calc((8 / var(--deviceWidth)) * 100vw);
   background-color: var(--primary);
 }
 
-
+/* Hero Heading & Subheading */
 .heroHeading h1 {
   margin-right: calc((12/var(--deviceWidth))* 100vw);
   font-size: calc((72 / var(--deviceWidth)) * 100vw);
@@ -86,14 +82,121 @@ body {
   color: var(--text-color);
 }
 
-.heroButtons {
+/* .heroButtons {
+  text-align: center;
   margin-top: calc((-20 / var(--deviceWidth)) * 100vw);
   background-color: var(--primary);
   border-radius: 4px;
   padding-inline: calc((14 / var(--deviceWidth)) * 100vw);
-
-}
+} */
 
 .heroImage img {
   width: 60vw;
+}
+
+/* Hamburger Icon */
+.hamburgerIcon {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+/* Mobile menu styles */
+.mobileMenu {
+  display: none;
+  position: fixed;
+  padding-inline: calc((196 / var(--deviceWidth)) * 100vw);
+  padding-top: calc((28 / var(--deviceWidth)) * 100vw);
+  top: 0;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 20px;
+  z-index: 1000;
+}
+
+/* Close icon inside the menu */
+.mobileMenu .closeIcon {
+  position: absolute;
+  width: calc((42 / var(--deviceWidth)) * 100vw);
+  top: calc((42 / var(--deviceWidth)) * 100vw);
+  right: calc((200 / var(--deviceWidth)) * 100vw);
+  cursor: pointer;
+}
+
+.mobileMenu a {
+  color: white;
+  text-decoration: none;
+  font-size: calc((16 / var(--deviceWidth)) * 100vw);
+}
+
+@media (max-width: 767px) {
+
+  /* Hide top nav only */
+  .navbar .navLinks,
+  .navbar .navButtons {
+    display: none !important;
+  }
+
+  .hamburgerIcon {
+    display: block !important;
+  }
+
+  .mobileMenu.open {
+    display: flex !important;
+  }
+
+  /* Show navButtons inside mobileMenu */
+  .mobileMenu .navButtons {
+    display: block !important;
+    font-size: calc((16 / var(--deviceWidth)) * 100vw);
+    margin-top: calc((20 / var(--deviceWidth)) * 100vw);
+    padding: calc((0/var(--deviceWidth))*100vw) 0;
+    width: calc((144 / var(--deviceWidth)) * 100vw);
+    text-align: center;
+  }
+
+}
+
+/* Tablet (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hamburgerIcon {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Desktop (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+  /* Styles for standard desktops */
+  .hamburgerIcon {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+  .hamburgerIcon {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* Styles for large desktops / monitors */
 }
