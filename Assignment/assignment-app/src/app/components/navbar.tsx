@@ -13,7 +13,7 @@ const Navbar = () => {
             {/* Fullscreen Mobile Menu */}
             <div className={`mobileMenu ${isOpen ? 'open' : ''}`}>
                 <div className="closeIcon" onClick={() => setIsOpen(false)}>
-                    <X size={28} color='white' />
+                    <X size={20} color='white' />
                 </div>
                 <ul>
                     <li><a href="#">Products</a></li>
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
                 {/* Hamburger Menu for Mobile */}
                 <div className="hamburger" onClick={() => setIsOpen(true)}>
-                    <Menu size={28} color='white' />
+                    <Menu size={20} color='white' />
                 </div>
 
                 <div className="navLinks">

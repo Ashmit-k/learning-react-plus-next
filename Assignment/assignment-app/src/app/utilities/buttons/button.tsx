@@ -7,7 +7,7 @@ type ButtonProps = {
 
 const ButtonClass: React.FC<ButtonProps> = ({ buttonText }) => {
     return (
-        <button className={`text-white ${Styles.commonBtn}`} >
+        <button className={`${Styles.commonBtn}`} >
             {buttonText}
         </button>
     )
