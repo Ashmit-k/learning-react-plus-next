@@ -112,7 +112,7 @@ body {
   padding-top: calc((28 / var(--deviceWidth)) * 100vw);
   top: 0;
   left: 0px;
-  height: 100vh;
+  height: 40vh;
   width: 100%;
   background-color: black;
   flex-direction: column;
