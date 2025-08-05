@@ -22,7 +22,7 @@ const HeroSection = () => {
                 <ButtonClass buttonText="Get Started" />
             </div>
 
-            <div className="heroImage w-4xl">
+            <div className="heroImage">
                 <img src="/assets/midImage.png" alt="Hero Illustration" />
             </div>
         </div>
