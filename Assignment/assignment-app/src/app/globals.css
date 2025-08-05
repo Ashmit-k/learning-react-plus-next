@@ -102,9 +102,9 @@ body {
   position: fixed;
   padding-inline: calc((196 / var(--deviceWidth)) * 100vw);
   padding-top: calc((28 / var(--deviceWidth)) * 100vw);
+  padding-bottom: 20px;
   top: 0;
   left: 0px;
-  height: 60vh;
   width: 100%;
   background-color: black;
   flex-direction: column;
@@ -132,7 +132,79 @@ body {
 
 /* // Responsive Styles */
 
-@media (max-width: 767px) {
+@media (max-width:575px) {
+
+  /* Hide top nav only */
+  .navbar .navLinks,
+  .navbar .navButtons {
+    display: none !important;
+  }
+
+  .hamburgerIcon {
+    display: block !important;
+
+  }
+
+  .hamburger {
+    width: 20px;
+  }
+
+  .mobileMenu.open {
+    display: flex !important;
+  }
+
+  /* Show navButtons inside mobileMenu */
+  .mobileMenu .navButtons {
+    display: block !important;
+    font-size: calc((16 / var(--deviceWidth)) * 100vw);
+    margin-top: calc((20 / var(--deviceWidth)) * 100vw);
+    padding: calc((0/var(--deviceWidth))*100vw) 0;
+    width: calc((258 / var(--deviceWidth)) * 100vw);
+    text-align: center;
+  }
+
+  .mobileMenu a {
+    color: white;
+    text-decoration: none;
+    font-size: calc((20 / var(--deviceWidth)) * 100vw);
+  }
+
+  .heroSection {
+    padding-top: calc((86/var(--deviceWidth))*100vw);
+    padding-inline: calc((197/ var(--deviceWidth)) * 100vw);
+    /* height: 100vh; */
+    /* display: none; */
+  }
+
+
+  .heroHeading {
+    /* padding-inline: calc((240/var(--deviceWidth))*100vw); */
+
+    margin-top: calc((24/var(--deviceWidth))*100vw);
+  }
+
+  .heroHeading h1 {
+    margin-right: calc((12 / var(--deviceWidth)) * 100vw);
+    font-size: calc((90 / var(--deviceWidth)) * 100vw);
+  }
+
+  .heroSubHeading p {
+    font-size: calc((24 / var(--deviceWidth)) * 100vw);
+    padding-inline: calc((260/var(--deviceWidth))*100vw);
+  }
+
+  .heroImage img {
+    width: 72vw;
+  }
+
+  .mobileMenu a {
+    color: white;
+    text-decoration: none;
+    font-size: calc((36 / var(--deviceWidth)) * 100vw);
+  }
+}
+
+@media (min-width:576px) and (max-width: 767px) {
 
   /* Hide top nav only */
   .navbar .navLinks,
@@ -163,26 +235,42 @@ body {
     text-align: center;
   }
 
+  .mobileMenu a {
+    color: white;
+    text-decoration: none;
+    font-size: calc((20 / var(--deviceWidth)) * 100vw);
+  }
+
   .heroSection {
     padding-top: calc((86/var(--deviceWidth))*100vw);
+    padding-inline: calc((197/ var(--deviceWidth)) * 100vw);
     height: 100vh;
     /* display: none; */
   }
 
 
   .heroHeading {
-    padding-inline: calc((240/var(--deviceWidth))*100vw);
+    /* padding-inline: calc((240/var(--deviceWidth))*100vw); */
+
     margin-top: calc((24/var(--deviceWidth))*100vw);
+  }
+
+  .heroHeading h1 {
+    margin-right: calc((12 / var(--deviceWidth)) * 100vw);
+    font-size: calc((90 / var(--deviceWidth)) * 100vw);
   }
 
   .heroSubHeading p {
     font-size: calc((24 / var(--deviceWidth)) * 100vw);
-    padding-inline: calc((360/var(--deviceWidth))*100vw);
+    padding-inline: calc((260/var(--deviceWidth))*100vw);
   }
 
-
+  .heroImage img {
+    width: 72vw;
+  }
 
 }
+
 
 /* Tablet (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
