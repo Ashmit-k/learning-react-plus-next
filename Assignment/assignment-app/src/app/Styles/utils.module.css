@@ -1,7 +1,7 @@
 .commonBtn {
     /* font-size: calc((16 / var(--deviceWidth)) * 100vw); */
     padding-inline: calc((24 / var(--deviceWidth)) * 100vw);
-    padding-block: calc((14 / var(--deviceWidth)) * 100vw);
+    padding-block: calc((8 / var(--deviceWidth)) * 100vw);
     border-radius: calc((4 / var(--deviceWidth)) * 100vw);
     background-color: var(--primary);
     color: var(--text-color);
