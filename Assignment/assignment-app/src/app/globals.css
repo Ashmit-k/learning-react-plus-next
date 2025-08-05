@@ -171,7 +171,7 @@ body {
 
   .heroSection {
     padding-top: calc((86/var(--deviceWidth))*100vw);
-    padding-inline: calc((197/ var(--deviceWidth)) * 100vw);
+    padding-inline: calc((164/ var(--deviceWidth)) * 100vw);
     /* height: 100vh; */
     /* display: none; */
   }
@@ -180,7 +180,7 @@ body {
   .heroHeading {
     /* padding-inline: calc((240/var(--deviceWidth))*100vw); */
 
-    margin-top: calc((24/var(--deviceWidth))*100vw);
+    margin-top: calc((36/var(--deviceWidth))*100vw);
   }
 
   .heroHeading h1 {
@@ -189,6 +189,7 @@ body {
   }
 
   .heroSubHeading p {
+    margin-top: calc((0/var(--deviceWidth))*100vw);
     font-size: calc((24 / var(--deviceWidth)) * 100vw);
     padding-inline: calc((260/var(--deviceWidth))*100vw);
   }
@@ -291,6 +292,10 @@ body {
   .heroSubHeading p {
     font-size: calc((18 / var(--deviceWidth)) * 100vw);
     padding-inline: calc((192/var(--deviceWidth))*100vw);
+  }
+
+  .heroImage img {
+    width: 73vw;
   }
 }
 

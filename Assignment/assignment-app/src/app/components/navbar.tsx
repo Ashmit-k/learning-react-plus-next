@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
                 {/* Hamburger Menu for Mobile */}
                 <div className="hamburger" onClick={() => setIsOpen(true)}>
-                    <Menu size={20} color='white' />
+                    <Menu size={24} color='white' />
                 </div>
 
                 <div className="navLinks">
