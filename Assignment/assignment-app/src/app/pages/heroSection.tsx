@@ -9,7 +9,7 @@ const HeroSection = () => {
 
       <div className="heroHeading text-center">
         <h1 className="gradient-text text-5xl font-extrabold">
-          Fast, Accurate, Scalable,
+          Fast, Accurate, Scalable
         </h1>
         <h1 className="gradient-text text-5xl font-extrabold">
           Cost Effective AI
