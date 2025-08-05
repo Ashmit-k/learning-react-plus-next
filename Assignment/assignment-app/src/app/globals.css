@@ -165,7 +165,7 @@ body {
 
   .heroSection {
     padding-top: calc((86/var(--deviceWidth))*100vw);
-    height: 60vh;
+    height: 100vh;
     /* display: none; */
   }
 
@@ -175,7 +175,8 @@ body {
     margin-top: calc((24/var(--deviceWidth))*100vw);
   }
 
-  .heroSubHeading {
+  .heroSubHeading p {
+    font-size: calc((24 / var(--deviceWidth)) * 100vw);
     padding-inline: calc((360/var(--deviceWidth))*100vw);
   }
 
@@ -191,6 +192,16 @@ body {
   .hamburger {
     display: none;
   }
+
+  .heroHeading {
+    padding-inline: calc((100/var(--deviceWidth))*100vw);
+    margin-top: calc((24/var(--deviceWidth))*100vw);
+  }
+
+  .heroSubHeading p {
+    font-size: calc((18 / var(--deviceWidth)) * 100vw);
+    padding-inline: calc((192/var(--deviceWidth))*100vw);
+  }
 }
 
 /* Desktop (1024px to 1439px) */
@@ -204,6 +215,7 @@ body {
   .hamburger {
     display: none;
   }
+
 }
 
 /* Large Screens (1440px and above) */
