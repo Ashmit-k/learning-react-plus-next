@@ -1,5 +1,5 @@
 .commonBtn {
-    /* font-size: calc((16 / var(--deviceWidth)) * 100vw); */
+    font-size: calc((16 / var(--deviceWidth)) * 100vw);
     padding-inline: calc((24 / var(--deviceWidth)) * 100vw);
     padding-block: calc((8 / var(--deviceWidth)) * 100vw);
     border-radius: calc((4 / var(--deviceWidth)) * 100vw);
@@ -15,10 +15,13 @@
     max-width: 250px;
     margin: 0 auto;
 
-    @media (max-width: 575px) {
+}
+
+@media (max-width: 575px) {
+    .commonBtn {
         font-size: calc((28 / var(--deviceWidth)) * 100vw);
         padding-inline: calc((20 / var(--deviceWidth)) * 100vw);
         padding-block: calc((12 / var(--deviceWidth)) * 100vw);
-
     }
+
 }

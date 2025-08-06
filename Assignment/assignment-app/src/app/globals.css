@@ -17,8 +17,8 @@ body {
 /* Hero Section */
 .heroSection {
   width: 100vw;
-  position: absolute;
-  height: 100vh;
+  position: relative;
+  /* height: 100vh; */
   gap: calc((48 / var(--deviceWidth)) * 100vw);
   padding-top: calc((38 / var(--deviceWidth)) * 100vw);
   padding-inline: calc((197 / var(--deviceWidth)) * 100vw);
@@ -30,7 +30,7 @@ body {
 
 /* Navbar */
 .navbar {
-  position: relative;
+  position: sticky;
   height: calc((59 / var(--deviceWidth)) * 100vw);
   width: 100%;
   display: flex;
@@ -63,22 +63,20 @@ body {
 }
 
 /* Hero Heading & Subheading */
-.heroHeading h1 {
+/* .heroHeading h1 {
   margin-right: calc((12 / var(--deviceWidth)) * 100vw);
   font-size: calc((72 / var(--deviceWidth)) * 100vw);
   font-weight: 600;
   text-align: center;
   line-height: 1.2;
   color: transparent;
-  background-image: radial-gradient(
-    circle,
-    #ffffff 0%,
-    #ffffff 35%,
-    #9ca3af 100%
-  );
+  background-image: radial-gradient(circle,
+      #ffffff 0%,
+      #ffffff 35%,
+      #9ca3af 100%);
   -webkit-background-clip: text;
   background-clip: text;
-}
+} */
 
 .heroSubHeading p {
   font-size: calc((18 / var(--deviceWidth)) * 100vw);
@@ -136,6 +134,7 @@ body {
 /* // Responsive Styles */
 
 @media (max-width: 576px) {
+
   /* Hide top nav only */
   .navbar .navLinks,
   .navbar .navButtons {
@@ -185,7 +184,7 @@ body {
 
   .heroHeading h1 {
     margin-right: calc((12 / var(--deviceWidth)) * 100vw);
-    font-size: calc((90 / var(--deviceWidth)) * 100vw);
+    /* font-size: calc((90 / var(--deviceWidth)) * 100vw); */
   }
 
   .heroSubHeading p {
@@ -206,6 +205,7 @@ body {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+
   /* Hide top nav only */
   .navbar .navLinks,
   .navbar .navButtons {
@@ -255,7 +255,7 @@ body {
 
   .heroHeading h1 {
     margin-right: calc((12 / var(--deviceWidth)) * 100vw);
-    font-size: calc((90 / var(--deviceWidth)) * 100vw);
+    /* font-size: calc((90 / var(--deviceWidth)) * 100vw); */
   }
 
   .heroSubHeading p {
@@ -295,6 +295,7 @@ body {
 
 /* Desktop (1024px to 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
+
   /* Styles for standard desktops */
   .hamburgerIcon {
     display: none;
@@ -303,6 +304,7 @@ body {
   .hamburger {
     display: none;
   }
+
 }
 
 /* Large Screens (1440px and above) */
@@ -315,5 +317,22 @@ body {
     display: none;
   }
 
+
+
   /* Styles for large desktops / monitors */
+}
+
+
+
+
+
+/* // Popular Section  */
+
+.PopularModelsSection {
+  width: 100vw;
+  padding-top: calc((100/ var(--deviceWidth)) * 100vw);
+  padding-inline: calc((20 / var(--deviceWidth)) * 100vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

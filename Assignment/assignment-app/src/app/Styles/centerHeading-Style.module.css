@@ -1,0 +1,28 @@
+.commonHeading {
+    margin-right: calc((12 / var(--deviceWidth)) * 100vw);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    color: transparent;
+    background-image: radial-gradient(circle,
+            #ffffff 0%,
+            #ffffff 35%,
+            #9ca3af 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .commonHeading {
+        font-size: calc((72 / var(--deviceWidth)) * 100vw);
+    }
+
+}
+
+/* Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+    .commonHeading {
+        font-size: calc((72 / var(--deviceWidth)) * 100vw);
+    }
+}

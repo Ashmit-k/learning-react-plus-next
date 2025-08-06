@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../components/navbar";
+
 import ButtonClass from "../utilities/buttons/button";
+import Styles from "../Styles/centerHeading-Style.module.css"
 
 const HeroSection = () => {
   return (
@@ -8,10 +10,10 @@ const HeroSection = () => {
       <Navbar />
 
       <div className="heroHeading text-center">
-        <h1 className="gradient-text text-5xl font-extrabold">
+        <h1 className={`gradient-text text-4xl font-extrabold ${Styles.commonHeading}`}>
           Fast, Accurate, Scalable
         </h1>
-        <h1 className="gradient-text text-5xl font-extrabold">
+        <h1 className={`gradient-text text-4xl font-extrabold ${Styles.commonHeading}`}>
           Cost Effective AI
         </h1>
       </div>
