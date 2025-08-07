@@ -18,48 +18,37 @@ interface IAIModel {
 
 const modelImages: IAIModel[] = [
   { src: "/assets/popularModels/llama.png", alt: "LLaMA", name: "LLaMA" },
-  {
-    src: "/assets/popularModels/deepseek.png",
-    alt: "Deepseek",
-    name: "Deepseek",
-  },
-  {
-    src: "/assets/popularModels/Bloomai-new-logo.png",
-    alt: "Bloomai",
-    name: "Bloomai",
-  },
+  { src: "/assets/popularModels/deepseek.png", alt: "Deepseek", name: "Deepseek" },
+  { src: "/assets/popularModels/Bloomai-new-logo.png", alt: "Bloomai", name: "Bloomai" },
   { src: "/assets/popularModels/cohere.png", alt: "Cohere", name: "Cohere" },
   { src: "/assets/popularModels/Mistral.png", alt: "Mistral", name: "Mistral" },
   { src: "/assets/popularModels/Gemma.png", alt: "Gemma", name: "Gemma" },
-  {
-    src: "/assets/popularModels/Bhashini.png",
-    alt: "Bhashini",
-    name: "Bhashini",
-  },
+  { src: "/assets/popularModels/Bhashini.png", alt: "Bhashini", name: "Bhashini" },
   { src: "/assets/popularModels/wen.png", alt: "Qwen", name: "Qwen" },
 ];
 
-const MidSection = () => {
+const handleImageError = () => {
+  console.warn("Image failed to load.");
+};
 
-  const modelImages = [
-    "/assets/popularModels/llama.png",
-    "/assets/popularModels/deepseek.png",
-    "/assets/popularModels/Bloomai-new-logo.png",
-    "/assets/popularModels/cohere.png",
-    "/assets/popularModels/Mistral.png",
-    "/assets/popularModels/Gemma.png",
-    "/assets/popularModels/Bhashini.png",
-    "/assets/popularModels/wen.png"
-  ]
+const MidSection = () => {
   return (
     <>
       <div className="PopularModelsSection">
-        <h1 className={`text-4xl ${Styles.commonHeading}`} >Wide Range of Popular Open Source Models</h1>
+        <h1 className={`text-4xl ${Styles.commonHeading}`}>
+          Wide Range of Popular Open Source Models
+        </h1>
 
-        <h6 className='my-8 text-white'>Run top Open-Source Models like <span className='text-[#B4E600]'> Llama-4, Deepseek R1 & many more</span> up to 4× faster than vLLM — 2× faster than Bedrock and Azure AI.</h6>
+        <h6 className="my-8 text-white">
+          Run top Open-Source Models like{" "}
+          <span className="text-[#B4E600]">
+            Llama-4, Deepseek R1 & many more
+          </span>{" "}
+          up to 4× faster than vLLM — 2× faster than Bedrock and Azure AI.
+        </h6>
 
         <div className="ModelSectionButton">
-          <ButtonClass buttonText='Get Started' />
+          <ButtonClass buttonText="Get Started" />
         </div>
 
         <div className="relative">
@@ -89,30 +78,20 @@ const MidSection = () => {
             {modelImages.map((model) => (
               <SwiperSlide key={model.name} className="flex justify-center">
                 <div className="bg-white rounded-lg p-3 h-[60px] w-[140px] flex items-center justify-center shadow-sm hover:shadow-md transition-shadow duration-200">
-                  {model.src ? (
-                    <Image
-                      width={120}
-                      height={40}
-                      src={model.src}
-                      alt={model.alt}
-                      className="max-h-[40px] max-w-[120px] object-contain"
-                      onError={handleImageError}
-                    />
-                  ) : null}
-                  <span
-                    className={`text-gray-800 font-semibold text-sm ${model.src ? "hidden" : "block"
-                      }`}
-                    style={{ display: model.src ? "none" : "block" }}
-                  >
-                    {model.name}
-                  </span>
+                  <Image
+                    width={120}
+                    height={40}
+                    src={model.src}
+                    alt={model.alt}
+                    className="max-h-[40px] max-w-[120px] object-contain"
+                    onError={handleImageError}
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
-    </section >
 
       <section className="platformHighlights text-center py-16">
         <h1 className={`text-4xl ${Styles.commonHeading}`}>
