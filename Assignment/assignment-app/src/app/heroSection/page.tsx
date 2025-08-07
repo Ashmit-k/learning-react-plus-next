@@ -1,8 +1,7 @@
 import React from "react";
-import Navbar from "../components/navbar";
-
 import ButtonClass from "../utilities/buttons/button";
-import Styles from "../Styles/centerHeading-Style.module.css"
+import Styles from "../../Styles/centerHeading-Style.module.css"
+import Navbar from "@/components/navbar";
 
 const HeroSection = () => {
   return (

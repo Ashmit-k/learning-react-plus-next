@@ -1,6 +1,7 @@
 import Image from "next/image";
-import HeroSection from "./pages/heroSection";
-import MidSection from "./pages/midSection";
+import HeroSection from "./heroSection/page";
+import MidSection from "./midSection/page";
+
 
 export default function Home() {
   return (

@@ -12,6 +12,30 @@
     background-clip: text;
 }
 
+.cardHeading {
+    font-size: calc((42 / var(--deviceWidth)) * 100vw);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    color: transparent;
+    background-image: radial-gradient(circle,
+            #ffffff 0%,
+            #ffffff 35%,
+            #9ca3af 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.cardSubHeading {
+    font-size: calc((20 / var(--deviceWidth)) * 100vw);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    color: transparent;
+    background-color: azure;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
 
 @media (min-width: 1024px) and (max-width: 1439px) {
     .commonHeading {

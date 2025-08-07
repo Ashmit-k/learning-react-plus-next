@@ -8,7 +8,8 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import ButtonClass from "../utilities/buttons/button";
-import Styles from "../Styles/centerHeading-Style.module.css";
+import Styles from "../../Styles/centerHeading-Style.module.css";
+import MidCardSection from "../midThreeCardSection/page";
 
 interface IAIModel {
   src: string;
@@ -63,13 +64,12 @@ const MidSection = () => {
             Run top Open-Source Models like{" "}
             <span className="text-[#B4E600] font-semibold">
               Llama-4, Deepseek R1
-            </span>{" "}
-            & <span className="text-[#B4E600] font-semibold">many more</span> up
+              & many more</span> up
             to 4× faster than vLLM — 2× faster than Bedrock and Azure AI.
           </p>
 
           <div className="flex justify-center mb-12">
-            <ButtonClass buttonText="Get Started" />
+            <ButtonClass buttonText="Get Started Info" />
           </div>
 
           <div className="relative">
@@ -139,6 +139,10 @@ const MidSection = () => {
         <h1 className={`text-4xl ${Styles.commonHeading}`}>
           Built for Efficient AI Performance
         </h1>
+        <h6 className={`${Styles.commonSubHeading} text-white mt-4`}>
+          Samavesh AI brings powerful features tailored to supercharge your inference workloads at scale.
+        </h6>
+        <MidCardSection />
       </section>
     </>
   );

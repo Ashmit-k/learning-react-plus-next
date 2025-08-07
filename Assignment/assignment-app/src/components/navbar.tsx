@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import ButtonClass from "../utilities/buttons/button";
+import ButtonClass from "../app/utilities/buttons/button";
 import { ChevronDown, X, Menu } from "lucide-react";
 
 const Navbar = () => {

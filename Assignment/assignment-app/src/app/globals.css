@@ -351,3 +351,8 @@ body {
   background-color: var(--primary);
   opacity: 1;
 }
+
+.custom-prev .custom-next {
+  background-color: #ccc;
+  border-radius: 50%;
+}
