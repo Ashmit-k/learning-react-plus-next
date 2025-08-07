@@ -12,7 +12,7 @@
 
     /* NEW - fixes for mobile */
     width: 100%;
-    max-width: 250px;
+    max-width: calc((300 / var(--deviceWidth)) * 100vw);
     margin: 0 auto;
 
 }

@@ -69,7 +69,7 @@ const MidSection = () => {
           </p>
 
           <div className="flex justify-center mb-12">
-            <ButtonClass buttonText="Get Started" />
+            <ButtonClass buttonText="Get Started Info" />
           </div>
 
           <div className="relative">
@@ -83,10 +83,14 @@ const MidSection = () => {
                 disableOnInteraction: false,
               }}
               pagination={{
+                el: ".custom-pagination",
                 clickable: true,
                 dynamicBullets: false,
               }}
-              navigation={true}
+              navigation={{
+                nextEl: ".custom-next",
+                prevEl: ".custom-prev",
+              }}
               className="features-swiper-container"
               breakpoints={{
                 320: { slidesPerView: 2, spaceBetween: 10 },
@@ -120,6 +124,13 @@ const MidSection = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+
+            {/* ✅ Custom Navigation */}
+            <div className="custom-prev absolute top-7 left-3 -translate-y-1/2 cursor-pointer text-xl font-bold z-10">←</div>
+            <div className="custom-next absolute top-7 right-16 -translate-y-1/2 cursor-pointer text-xl font-bold z-10">→</div>
+            {/* 
+            {/* ✅ Custom Pagination */}
+            <div className="custom-pagination flex justify-center mt-4 gap-2 "></div>
           </div>
         </div>
       </section>
