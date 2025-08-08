@@ -27,7 +27,9 @@
 }
 
 .cardSubHeading {
-    font-size: calc((20 / var(--deviceWidth)) * 100vw);
+    font-size: calc((16 / var(--deviceWidth)) * 100vw);
+    margin-top: calc((28 / var(--deviceWidth)) * 100vw);
+    padding-inline: calc((8 / var(--deviceWidth)) * 100vw);
     font-weight: 400;
     text-align: center;
     line-height: 1.2;
@@ -41,7 +43,6 @@
     .commonHeading {
         font-size: calc((72 / var(--deviceWidth)) * 100vw);
     }
-
 }
 
 /* Large Screens (1440px and above) */

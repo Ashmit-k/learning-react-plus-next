@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -9,7 +8,8 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import ButtonClass from "../utilities/buttons/button";
 import Styles from "../../Styles/centerHeading-Style.module.css";
-import MidCardSection from "../midThreeCardSection/page";
+import MidCardSection from "./midThreeCardSection/page";
+import MidExperience from "./midExperienceSection/page";
 
 interface IAIModel {
   src: string;
@@ -143,6 +143,7 @@ const MidSection = () => {
           Samavesh AI brings powerful features tailored to supercharge your inference workloads at scale.
         </h6>
         <MidCardSection />
+        <MidExperience />
       </section>
     </>
   );
